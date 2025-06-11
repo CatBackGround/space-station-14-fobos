@@ -1,0 +1,77 @@
+- type: entity
+  id: RPD
+  parent: [ BaseItem, BaseEngineeringContraband ]
+  name: RPD
+  description: The rapid construction device can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function.
+  components:
+  - type: RCD
+    isRpd: true
+    availablePrototypes:
+    - PipeFourway
+    - PipeStraight
+    - PipeBend
+    - PipeTJunction
+    - OutletInjector
+    - ManualValve
+    - VolumetricPump
+    - PressurePump
+    - VentScrubber
+    - PressureValve
+    - DualPortVent
+    - VentGas
+    - VentPassive
+    - MixerGas
+    - Radiator
+    - RadiatorBend
+    - SignalValve
+    - CanisterPort
+    - FilterGas
+    - Deconstruct
+  - type: LimitedCharges
+    charges: 45
+    maxCharges: 45
+  - type: Sprite
+    sprite: _Backmen/Objects/Tools/rpd.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Clothing
+    sprite: _Backmen/Objects/Tools/rpd.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 600
+      Plastic: 100
+  - type: StaticPrice
+    price: 110
+  - type: UserInterface
+    interfaces:
+      enum.RcdUiKey.Key:
+        type: RCDMenuBoundUserInterface
+  - type: ActivatableUI
+    inHandsOnly: true
+    key: enum.RcdUiKey.Key
+
+- type: entity
+  id: RPDEmpty
+  parent: RPD
+  suffix: Empty
+  components:
+  - type: LimitedCharges
+    charges: 0
+    maxCharges: 45
+
+- type: entity
+  id: RPDRecharging
+  parent: RPD
+  name: experimental RPD
+  description: Rapid Piping Dispenser, enhanced with bluespace technology that passively generates compressed matter.
+  suffix: Autorecharge, Admeme
+  components:
+  - type: LimitedCharges
+    maxCharges: 45
+    charges: 45
+  - type: AutoRecharge
+    rechargeDuration: 10

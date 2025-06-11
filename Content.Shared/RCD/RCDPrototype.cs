@@ -45,6 +45,12 @@ public sealed partial class RCDPrototype : IPrototype
     public string? Prototype { get; private set; } = string.Empty;
 
     /// <summary>
+    /// If the entity can be flipped, this prototype is available as an alternate (mode dependent)
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadOnly)]
+    public string? MirrorPrototype { get; private set; } = string.Empty;
+
+    /// <summary>
     /// Number of charges consumed when the operation is completed
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadOnly)]
@@ -116,6 +122,28 @@ public sealed partial class RCDPrototype : IPrototype
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadOnly)]
     public RcdRotation Rotation { get; private set; } = RcdRotation.User;
+}
+
+/// <summary>
+/// Represents a group/category of RCD actions in the radial UI.
+/// </summary>
+[Prototype("rcdGroup")]
+public sealed class RCDGroupPrototype : IPrototype
+{
+    [IdDataField]
+    public string ID { get; private set; } = default!;
+
+    /// <summary>
+    /// Localized name of the group (used for tooltips and labels)
+    /// </summary>
+    [DataField(required: true)]
+    public string Name { get; private set; } = default!;
+
+    /// <summary>
+    /// Icon used in the radial menu for this group
+    /// </summary>
+    [DataField(required: true)]
+    public SpriteSpecifier? Sprite { get; private set; } = default!;
 }
 
 public enum RcdMode : byte
