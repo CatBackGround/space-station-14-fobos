@@ -74,19 +74,6 @@ public sealed class CCCVars
         CVarDef.Create("tts.rate_limit_count", 3, CVar.SERVERONLY);
 
     /*
-     * Peaceful Round End. DEADSPACE: Deleted.
-     */
-
-    /// <summary>
-    /// Making everyone a pacifist at the end of a round.
-    /// </summary>
-    
-    /*
-    public static readonly CVarDef<bool> PeacefulRoundEnd =
-        CVarDef.Create("game.peaceful_end", true, CVar.SERVERONLY);
-     */
-    
-    /*
      * Discord Auth
      */
 
