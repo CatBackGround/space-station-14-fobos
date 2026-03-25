@@ -1,0 +1,6 @@
+- type: tool
+  id: ResetImpLock
+  name: tool-quality-ueg-resetimplock-name
+  toolName: tool-quality-ueg-resetimplock-tool-name
+  spawn: MultitoolUEG
+  icon: { sprite: _DeadSpace/UEGSM/Objects/Tools/multitool_ueg.rsi, state: icon }

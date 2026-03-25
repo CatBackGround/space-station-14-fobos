@@ -1,0 +1,101 @@
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, AllowSuitStorageClothing ]
+  id: ClothingOuterUEGSMPowersuitTitan
+  name: силовая броня космодесанта ОПЗ МК-10 "Титан"
+  description: Силовая броня космодесанта ОПЗ выделяется внушительным силуэтом, который надежно укрывает многие части тела бойца. Корпус брони выполнен из многослойного керамита и композитных материалов, обеспечивающих высокий уровень защиты от кинетического и энергетического оружия. На левом наплечнике гордо реет флаг ОПЗ, символизирующий принадлежность к Объединённому Правительству Земли, а на правом — тактические обозначения, указывающие на принадлежность к конкретному полку и роте. При виде человека в данной броне, в вашем сердце расцветает надежда.
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/UEGSM/Clothing/OuterClothing/Powersuits/ueg_sm_powersuit.rsi
+  - type: Clothing
+    sprite: _DeadSpace/UEGSM/Clothing/OuterClothing/Powersuits/ueg_sm_powersuit.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+  - type: FireProtection
+    reduction: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.25 #best armor in the game
+        Slash: 0.25
+        Poison: 0.05 # DS14-value: what is poison?
+        Piercing: 0.25
+        Heat: 0.15
+        Cold: 0.1
+        Shock: 0.3
+        Radiation: 0.05
+        Caustic: 0.15
+        Stun: 0.05 # DS14-value: what is stun?
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.0
+  - type: GroupExamine
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetUEGSMPowersuit
+  - type: ImplantEquipmentAuthorization
+    implants:
+    - EquipmentAuthorizationImplant
+  - type: Speech
+  - type: TTS
+    voice: Adjutant
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, AllowSuitStorageClothing ]
+  id: ClothingOuterUEGSMPowersuitApocrit
+  name: терминаторская силовая броня космодесанта ОПЗ МК-11 "Апокрит"
+  description: Терминаторская cиловая броня космодесанта ОПЗ выделяется более внушительным силуэтом, который надежно укрывает многие части тела космодесантника. Корпус брони выполнен из многослойного керамита и композитных материалов, обеспечивающих высокий уровень защиты от кинетического и энергетического оружия. На левом наплечнике гордо реет флаг ОПЗ, символизирующий принадлежность к Объединённому Правительству Земли, а на правом — тактические обозначения, указывающие на принадлежность к конкретному полку и роте, а так же к почётному терминаторскому подразделению. При виде человека в данной колоссальной броне, в вашем сердце расцветает надежда.
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/UEGSM/Clothing/OuterClothing/Powersuits/ueg_sm_powersuit_terminator.rsi
+  - type: Clothing
+    sprite: _DeadSpace/UEGSM/Clothing/OuterClothing/Powersuits/ueg_sm_powersuit_terminator.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+  - type: FireProtection
+    reduction: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.05 #best armor in the game
+        Slash: 0.05
+        Poison: 0.05 # DS14-value: what is poison?
+        Piercing: 0.05
+        Heat: 0.1
+        Cold: 0.1
+        Shock: 0.1
+        Radiation: 0.0
+        Caustic: 0.1
+        Stun: 0.01 # DS14-value: what is stun?
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.0
+  - type: GroupExamine
+  - type: ClothingSpeedModifier
+    walkModifier: 0.65
+    sprintModifier: 0.65
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetUEGSMPowersuitTerminator
+  - type: ImplantEquipmentAuthorization
+    implants:
+    - EquipmentAuthorizationImplant
+  - type: Speech
+  - type: TTS
+    voice: Adjutant
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag

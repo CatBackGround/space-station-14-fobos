@@ -1,0 +1,53 @@
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ClothingHeadHelmetUEGSMPowersuit
+  name: шлем силовой брони космодесанта ОПЗ
+  description: Технологичный шлем силовой брони космодесанта ОПЗ.
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/UEGSM/Clothing/Head/PowersuitsHelmets/ueg_sm_powersuit_helmet.rsi
+  - type: Clothing
+    sprite: _DeadSpace/UEGSM/Clothing/Head/PowersuitsHelmets/ueg_sm_powersuit_helmet.rsi
+  - type: PointLight
+    color: "#C1FFF0"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Poison: 0.05 # DS14-value: what is poison?
+        Piercing: 0.70
+        Heat: 0.70
+        Radiation: 0.80
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.0
+  - type: GroupExamine
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ClothingHeadHelmetUEGSMPowersuitTerminator
+  name: шлем терминаторской силовой брони космодесанта ОПЗ
+  description: Технологичный шлем терминаторской силовой брони космодесанта ОПЗ, на ней виднеется дополнительный слой защиты.
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/UEGSM/Clothing/Head/PowersuitsHelmets/ueg_sm_powersuit_terminator_helmet.rsi
+  - type: Clothing
+    sprite: _DeadSpace/UEGSM/Clothing/Head/PowersuitsHelmets/ueg_sm_powersuit_terminator_helmet.rsi
+  - type: PointLight
+    color: "#C1FFF0"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Poison: 0.05 # DS14-value: what is poison?
+        Piercing: 0.6
+        Heat: 0.6
+        Radiation: 0.40 
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.0
+  - type: GroupExamine
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag

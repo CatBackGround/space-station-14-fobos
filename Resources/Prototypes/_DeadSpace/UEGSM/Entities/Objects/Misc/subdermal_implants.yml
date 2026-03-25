@@ -1,0 +1,21 @@
+- type: entity
+  parent: BaseSubdermalImplant
+  id: EquipmentAuthorizationImplant
+  name: equipment authorization implant
+  description: Allows using gear that checks for an authorization implant.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+    permanent: true
+  - type: EquipmentAuthorizationImplant
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: RadianceImplant
+  name: radiance implant
+  description: This implant will ensure loyalty to United Earth Goverment, prevent mind control devices and submission magic. (IT JUST WORKS!)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+    permanent: true
+  - type: RadianceImplant

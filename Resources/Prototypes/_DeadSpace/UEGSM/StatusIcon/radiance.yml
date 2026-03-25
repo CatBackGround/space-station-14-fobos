@@ -1,0 +1,9 @@
+- type: securityIcon
+  id: RadianceIcon
+  priority: 2
+  locationPreference: Left # Corvax-TypingIndicator
+  layer: Mod
+  isShaded: true
+  icon:
+    sprite: /Textures/_DeadSpace/UEGSM/Interface/Misc/radiance.rsi
+    state: radiance

@@ -1,0 +1,15 @@
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons]
+  id: ClothingEyesUEGSMTacticalVisor
+  name: Тактический визор
+  description: Тактический визор, используемый вооружёнными органами ОПЗ.
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/UEGSM/Clothing/Eyes/Hud/tactical_glasses.rsi
+  - type: Clothing
+    sprite: _DeadSpace/UEGSM/Clothing/Eyes/Hud/tactical_glasses.rsi
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowRadianceIcons
+  - type: ShowUEGSMIcons

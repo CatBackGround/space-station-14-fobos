@@ -1,0 +1,45 @@
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackUEGSM
+  name: ранец силовой брони
+  description: Специальный ранец силовой брони Астартес, что обеспечивает питание, охлаждение, а так же имееет дополнительный Блюспейс блок хранения предметов.
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/UEGSM/Clothing/Back/ueg_sm_backpack.rsi
+  - type: Storage
+    grid:
+    - 0,0,13,5
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: ExplosionResistance # DS14
+    damageCoefficient: 0.05
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackUEGSMTerminator
+  name: ранец терминаторской силовой брони
+  description: Специальный ранец терминаторской силовой брони Астрес, что обеспечивает питание, охлаждение, а так же имееет дополнительный Блюспейс блок хранения предметов.
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/UEGSM/Clothing/Back/ueg_sm_terminator_backpack.rsi
+  - type: Storage
+    grid:
+    - 0,0,13,5
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: ExplosionResistance # DS14
+    damageCoefficient: 0.05
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.65
+        Heat: 0.65

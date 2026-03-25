@@ -33,6 +33,7 @@ using Content.Shared.Wieldable;
 using Content.Shared.Zombies;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.DeadSpace.Virus;
+using Content.Shared.DeadSpace.Overlays;
 
 namespace Content.Shared.Inventory;
 
@@ -102,6 +103,8 @@ public partial class InventorySystem
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ShowCriminalRecordIconsComponent>>(RefRelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<BlackAndWhiteOverlayComponent>>(RefRelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<NoirOverlayComponent>>(RefRelayInventoryEvent);
+        SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ShowRadianceIconsComponent>>(RefRelayInventoryEvent); // DS14-edit
+        SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ShowUEGSMIconsComponent>>(RefRelayInventoryEvent); // DS14-edit
 
         SubscribeLocalEvent<InventoryComponent, GetVerbsEvent<EquipmentVerb>>(OnGetEquipmentVerbs);
         SubscribeLocalEvent<InventoryComponent, GetVerbsEvent<InnateVerb>>(OnGetInnateVerbs);

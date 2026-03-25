@@ -1,0 +1,20 @@
+- type: entity
+  id: EquipmentAuthorizationImplanter
+  parent: BaseImplantOnlyImplanter
+  name: equipment authorization implanter
+  description: Installs an implant that authorizes the wearer for implant-locked equipment.
+  components:
+  - type: Item
+    sprite: _DeadSpace/UEGSM/Objects/Specific/Medical/ueg_sm_implanter.rsi
+    heldPrefix: implanter
+  - type: Sprite
+    sprite: _DeadSpace/UEGSM/Objects/Specific/Medical/ueg_sm_implanter.rsi
+    state: implanter1
+    layers:
+    - state: implanter0
+      map: [ "implantFull" ]
+      visible: true
+    - state: implanter1
+      map: [ "implantOnly" ]
+  - type: Implanter
+    implant: EquipmentAuthorizationImplant
