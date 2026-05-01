@@ -2,7 +2,13 @@
   id: ADTFoodSausageFried
 
 - type: Tag
+  id: AdvancedMineralScanner
+
+- type: Tag
   id: AmbrosiaDeus
+
+- type: Tag
+  id: AnimateSpellBlacklist
 
 - type: Tag
   id: BatteryWeaponFireModesSprites
@@ -38,6 +44,9 @@
   id: DrinkBeerBottleFull
 
 - type: Tag
+  id: CantChangeScale
+
+- type: Tag
   id: CakeBrain
 
 - type: Tag
@@ -68,6 +77,30 @@
   id: DockCentcommERT
 
 - type: Tag
+  id: DockCentcommERTCburnShuttle
+
+- type: Tag
+  id: DockCentcommERTSierraShuttle
+
+- type: Tag
+  id: DockCentcommERTJanitorsShuttle
+
+- type: Tag
+  id: DockCentcommERTGammaShuttle
+
+- type: Tag
+  id: DockCentcommERTRedShuttle
+
+- type: Tag
+  id: DockCentcommERTAmberShuttle
+
+- type: Tag
+  id: DockCentcommERTEngineersShuttle
+
+- type: Tag
+  id: DockCentcommERTOfficialShuttle
+
+- type: Tag
   id: DonkCo
 
 - type: Tag
@@ -78,6 +111,9 @@
 
 - type: Tag
   id: EnergySword
+
+- type: Tag
+  id: EnergyKatana
 
 - type: Tag
   id: EnergySwordDouble
@@ -105,6 +141,9 @@
 
 - type: Tag
   id: FoodChiliPepper
+
+- type: Tag
+  id: GasTank
 
 - type: Tag
   id: GiantSpiderSpace
@@ -158,6 +197,9 @@
   id: MagazineCarbineSKS
 
 - type: Tag
+  id: Magmite
+
+- type: Tag
   id: MagazineEagle
 
 - type: Tag
@@ -177,6 +219,9 @@
 
 - type: Tag
   id: MeatWheat
+
+- type: Tag
+  id: Medipen
 
 - type: Tag
   id: MukhtarWearable
@@ -312,6 +357,9 @@
 
 - type: Tag
   id: TaipanRole
+
+- type: Tag
+  id: TapeRecorderCoin
 
 - type: Tag
   id: Titanium
